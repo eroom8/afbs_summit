@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/activity_main_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTint="#A18025"
+        android:indeterminateTintMode="src_atop" />
+
+    <!-- Offline Text -->
+    <TextView
+        android:id="@+id/offlineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loading_progress"
+        android:layout_centerInParent="true"
+        android:text="you are offline!"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
